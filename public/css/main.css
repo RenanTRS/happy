@@ -29,4 +29,31 @@ body, input, button, textarea{
     min-height: 100vh;
 
     text-align: center;
+
+    display: flex;
+}
+#container{
+    margin: auto;
+
+    width: 90%;
+}
+
+.location, h1, .visit p{
+    height: 16vh;
+}
+
+.visit a{
+    background: #ffd666;
+
+    width: 8rem;
+    height: 8rem;
+
+    border: none;
+    border-radius: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 auto;
 }
