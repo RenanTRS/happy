@@ -1,0 +1,94 @@
+#page-orphanage{
+    display: flex;
+
+    min-height: 100vh;
+}
+aside.sidebar{
+    position: fixed;
+
+    height: 100%;
+
+    padding: 3.2rem 2.4rem;
+
+    background: #15C3D6;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+aside.sidebar footer button{
+    width: 4.8rem;
+    height: 4.8rem;
+
+    border: none;
+    border-radius: 1.6rem;
+
+    background: #12afcb;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color 0.2s;
+}
+aside.sidebar footer button:hover{
+    background-color: #17d6eb;
+}
+.with-sidebar{
+    padding-left: 11rem;
+}
+
+.orphanage-details{
+    width: 70rem;
+
+    margin: 6.4rem auto;
+
+    background: white;
+
+    border: .1rem solid #d3e2e5;
+    border-radius: 2rem;
+
+    overflow: hidden;
+}
+.orphanage-details > img{
+    width: 100%;
+    height: 30rem;
+
+    object-fit: cover;
+}
+
+.images{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.6rem;
+
+    margin: 1.6rem 4rem 0;
+}
+.images button{
+    border: 0;
+    border-radius: 2rem;
+
+    overflow: hidden;
+    
+    background: none;
+
+    height: 8.8rem;
+
+    cursor: pointer;
+
+    opacity: .6;
+
+    transition: opacity .2s;
+}
+.images button:hover, .images button.active{
+    opacity: 1;
+}
+.images button img{
+    width: 100%;
+    height: 8.8rem;
+
+    object-fit: cover;
+}
