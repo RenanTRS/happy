@@ -92,3 +92,45 @@ aside.sidebar footer button:hover{
 
     object-fit: cover;
 }
+
+.orphanage-details-content{
+    padding: 8rem;
+}
+.orphanage-details-content h1{
+    color: #4d6f80;
+    
+    font-size: 5.4rem;
+    line-height: 1.5;
+
+    margin-bottom: 0.8rem;
+}
+.orphanage-details-content p {
+    color: #5c8599;
+
+    line-height: 1.6;
+
+    margin-top: 2.4rem;
+}
+
+.map-container{
+    margin-top: 6.4rem;
+
+    background: #e6f7fb;
+
+    border: 1px solid #b3dae2;
+    border-radius: 2rem;
+}
+#mapid{
+    width: 100%;
+    height: 28rem;
+}
+.map-container footer{
+    padding: 2rem 0;
+    text-align: center;
+}
+.map-container footer a{
+    color: #0089a5;
+    
+    text-decoration: none;
+}
+
