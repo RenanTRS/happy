@@ -86,3 +86,24 @@ fieldset legend{
 
     cursor: pointer;
 }
+
+.new-upload{
+    position: relative;
+}
+.new-upload span{
+    position: absolute;
+    
+    right: 12px;
+    bottom: 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #d3e2e5;
+    border-radius: 10px;
+
+    display: flex;
+
+    padding: .6rem;
+
+    cursor: pointer;
+}

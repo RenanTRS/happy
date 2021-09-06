@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./public/css/sidebar.css">
     <link rel="stylesheet" href="./public/css/map.css">
     <link rel="stylesheet" href="./public/css/form.css">
+    <link rel="stylesheet" href="./public/css/buttons.css">
     <link rel="stylesheet" href="./public/css/page-create-orphanage.css">
 </head>
 <body>
@@ -64,7 +65,10 @@
                     <div class="input-block images">
                         <label for="images">Foto</label>
                         <div class="images-upload" id="images">
-                            <input type="text" name="images" placeholder="Cole o link da foto aqui">
+                            <div class="new-upload">
+                                <input type="text" name="images" placeholder="Cole o link da foto aqui">
+                                <span><img src="./public/images/red-x.svg" alt="Remover foto"></span>
+                            </div>
                         </div>
                         <button type="button">
                             <img src="./public/images/add-file.svg" alt="Nova imagem">
@@ -74,6 +78,26 @@
 
                 <fieldset>
                     <legend>Visitação</legend>
+                    <div class="input-block">
+                        <label for="instructions">Instruções</label>
+                        <textarea type="text" name="instructions" id="instructions"></textarea>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="opening_hours">Hrário das visitas</label>
+                        <input type="text" name="opening_hours" id="opening_hours">
+                    </div>
+
+                    <div class="input-block">
+                        <label for="open_on_weekends">Atende fim de semana?</label>
+                        <input type="hidden" id="open_on_weekends" name="open_on_weekends" value="1">
+                        <div class="button-select">
+                            <button type="button" class="active">Sim</button>
+                            <button type="button">Não</button>
+                        </div>
+
+                        <button type="submit" class="primary-button">Confirmar</button>
+                    </div>
                 </fieldset>
             </form>
 
