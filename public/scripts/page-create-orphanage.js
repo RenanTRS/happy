@@ -27,4 +27,18 @@ map.on('click', (event)=>{
     //add icon layer
     marker = L.marker([lat, lng], {icon: icon}).addTo(map)
 });
-//L.marker([-27.2210624,-49.6455527], {icon: icon}).addTo(map);
+
+//Adicionar o campo de fotos
+function addPhotoField(){
+    //Pegar o container de fotos #images
+    const container = document.querySelector('#images');
+
+    //Pegar o container para duplicar .new-upload
+    const fieldsContainer = document.querySelectorAll('.new-upload');
+
+    //Realizar o clone da última imagem adicionada
+    const newFieldContainer = fieldsContainer[fieldsContainer.length - 1].cloneNode(true);
+    
+    //Adicionar o clone ao containder de #images
+    container.appendChild(newFieldContainer);
+}
