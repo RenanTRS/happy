@@ -8,6 +8,10 @@ const server = express();
 //Utilizando os arquivos estáticos
 server.use(express.static('public'));
 
+//Configura template engine
+server.set('views', path.join(__dirname, 'views'));
+server.set('view engine', 'hbs');
+
 //Cria uma rota
 server.get('/', (req, res)=>{
 
