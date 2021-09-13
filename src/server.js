@@ -14,8 +14,7 @@ server.set('view engine', 'hbs');
 
 //Cria uma rota
 server.get('/', (req, res)=>{
-
-    return res.sendFile(path.join(__dirname, 'views', 'index.html'));
+    return res.render('index');
 });
 
 //Liga o servidor
