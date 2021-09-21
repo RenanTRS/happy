@@ -23,6 +23,9 @@ module.exports = {
           const db = await Database;
           const results = await db.all(`SELECT * FROM orphanages WHERE id = "${id}"`);
           const orphanage = results[0];
+
+          orphanage.images = orphanage.images.split(",");
+          orphanage.firstImage = orphanage.images[0];
           
           return res.render('orphanage', {orphanage});
         } catch (error) {
