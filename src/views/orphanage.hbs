@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lar das Meninas | Happy</title>
+    <title>{{orphanage.name}} | Happy</title>
 
     <!--leafletjs-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -36,7 +36,7 @@
         
         <main class="animate-appear with-sidebar">
             <div class="orphanage-details">
-                <img src="/images/home.jpg" alt="Lar das meninas">
+                <img src="/images/home.jpg" alt="{{orphanage.name}}">
                 <div class="images">
                     <button onclick="selectImage(event)" class="active" type="button">
                         <img src="https://source.unsplash.com/random?id=1" alt="Lar das meninas">
@@ -59,8 +59,8 @@
                 </div>
 
                 <div class="orphanage-details-content">
-                    <h1>Lar das Meninas</h1>
-                    <p>Presta assistência a crianças de 06 a 15 anos que se encontre em situação de risco e/ou vulnerabilidade social.</p>
+                    <h1>{{orphanage.name}}</h1>
+                    <p>{{orphanage.about}}</p>
                     <div class="map-container">
                         <div id="mapid"></div>
                         <footer>
@@ -70,17 +70,17 @@
                     <hr>
 
                     <h2>Instruções para visita</h2>
-                    <p>Venha como se sentir a vontade e traga muito amor e paciência para dar.</p>
+                    <p>{{orphanage.instructions}}</p>
 
                     <div class="open-details">
                         <div class="hour">
                             <img src="/images/clock.svg" alt="Horários">
-                            Horário de visitas Das 8h às 18h
+                            {{orphanage.opening_hours}}
                         </div>
 
                         <div class="open-on-weekends">
                             <img src="/images/info.svg" alt="Informações">
-                            Atendemos fim de semana
+                            {{orphanage.open_on_weekends}}
                         </div>
 
                     </div>
