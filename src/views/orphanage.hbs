@@ -51,8 +51,9 @@
                     <p>{{orphanage.about}}</p>
                     <div class="map-container">
                         <div id="mapid"></div>
+                        <span data-lat="{{orphanage.lat}}" data-lng="{{orphanage.lng}}"></span>
                         <footer>
-                            <a href="#">Ver rotas no Google Maps</a>
+                            <a target="_blank" href="https://maps.google.com/mobile?q={{orphanage.lat}},{{orphanage.lng}}&z=15">Ver rotas no Google Maps</a>
                         </footer>
                     </div>
                     <hr>
