@@ -1,11 +1,21 @@
-const orphanages = require('./database/fakedata.js');
+const Database = require('./database/db.js');
+const saveOrphanage = require('./database/saveOrphanage.js');
 
 module.exports = {
     index(req, res){
         return res.render('index');
     },
-    orphanages(req, res){
-        return res.render('orphanages', {orphanages});
+    
+    async orphanages(req, res){
+        try {
+            //Colocar o orphanages pelo banco
+            const db = await Database;
+            const orphanages = await db.all('SELECT * FROM orphanages');
+            return res.render('orphanages', {orphanages});
+        } catch (error) {
+            console.log(error);
+            return res.send('Erro no banco de dados');
+        }
     },
     orphanage(req, res){
         return res.render('orphanage');
