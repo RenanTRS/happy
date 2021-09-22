@@ -103,6 +103,8 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 2rem;
+
+    line-height: 1.5;
 }
 
 .open-details div{
