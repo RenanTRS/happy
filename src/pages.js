@@ -38,9 +38,13 @@ module.exports = {
             console.log(error);
             return res.send('Erro no banco de dados');
         }
-        return res.render('orphanage');
+        //return res.render('orphanage');
     },
     createOrphanage(req, res){
         return res.render('create-orphanage');
+    },
+
+    async saveOrphanage(req, res){
+        console.log(req.body);
     }
 }
