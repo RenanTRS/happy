@@ -45,6 +45,11 @@ module.exports = {
     },
 
     async saveOrphanage(req, res){
-        console.log(req.body);
+        const fields = req.body;
+
+        //Validar se todos os campos estão preenchidos
+        if(Object.values(fields).includes('')){
+            return res.send('Todos os campos devem ser preenchidos');
+        }
     }
 }
